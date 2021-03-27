@@ -5,6 +5,7 @@ import * as esCounter from './es-test';
 import { range, testGen, rangeGen } from './range';
 import {getWords, wordsCount, getWords2, wordsCount2} from './count-words'
 import {myMap} from './prototype'
+import {bubble} from './bubble'
 
 window.addEventListener('load', function(){
 
@@ -13,12 +14,11 @@ window.addEventListener('load', function(){
   //getWords2('  Всем  привет! Ура ура! ')
   //wordsCount2('  Всем  привет! Ура ура! ')
 
-  myMap()
+  // myMap()
+  // let arr = [1, 2, 3, 4]
+  // arr = arr.myMap(x => x + 1)
+  // console.log(arr)
 
-  let arr = [1, 2, 3, 4]
-  
-  arr = arr.myMap(x => x + 1)
-
-  console.log(arr)
+  //bubble()
 })
 
