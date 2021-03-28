@@ -5,7 +5,7 @@ import {getWords, wordsCount, getWords2, wordsCount2} from './count-words'
 import {myMap} from './prototype'
 import {bubble} from './bubble'
 import {difMethods} from './methods-loop'
-import {objectProperties} from './objectProperties'
+import {objectProperties} from './object-properties'
 function run() {
   objectProperties()
 }
