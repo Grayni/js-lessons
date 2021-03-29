@@ -15,6 +15,10 @@ function objectProperties() {
   // 2)
   obj1 = obj2 // assignment
   console.log(obj1 === obj2) // obj1 reference on obj2
+
+  // 3) if obj1 = obj2
+  obj1.name = 'Artem'
+  console.log(obj2.name) // Artem // Because, obj2 reference on obj1 // two names for the object
 }
 
 export {objectProperties}
