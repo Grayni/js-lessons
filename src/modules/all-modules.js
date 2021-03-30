@@ -7,8 +7,8 @@ import {bubble} from './bubble'
 import {difMethods} from './methods-loop'
 import {objectProperties} from './object-properties'
 import {mathFunc} from './math'
+
 function run() {
-  mathFunc()
 }
 
 export {run}
