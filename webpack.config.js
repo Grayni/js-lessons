@@ -1,24 +1,30 @@
 let path = require('path');
 
 let conf = {
-	entry: './src/main.js',
-	output: {
-		path: path.resolve(__dirname, './dist'),
-		filename: 'main.js',
-		publicPath: 'dist/'
-	},
-	module: {
-		rules: [
-			{
-				test: /\.js$/,
-				loader: 'babel-loader',
-				exclude: '/node_modules/'
-			}
-		]
-	}
+  entry: './src/main.js',
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: 'main.js',
+    publicPath: 'dist/'
+  },
+  entry: './src/game.js',
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: 'game.js',
+    publicPath: 'dist/'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: '/node_modules/'
+      }
+    ]
+  }
 };
 
 module.exports = (env, argv) => {
-	conf.devtool = (argv.mode === 'production') ? 'none' : 'eval-cheap-module-source-map';
-	return conf;
+  conf.devtool = (argv.mode === 'production') ? 'none' : 'eval-cheap-module-source-map';
+  return conf;
 }
